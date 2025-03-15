@@ -1,0 +1,17 @@
+import csv
+
+# Open the file in write mode (or append if you don't want to overwrite)
+with open("results.csv", "w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    
+    # Write header if needed
+    writer.writerow(["PubmedID", "Title", "Publication Date", "Non-academic Author(s)", "Company Affiliation(s)", "Corresponding Author Email"])
+    
+    # Write results to the CSV
+    writer.writerows(results)
+
+    # Optionally, print the results to the same file
+    print("Results being saved:", file=f)  # This prints a message in the CSV file.
+    for result in results:
+        print(result, file=f)  # Prints each result to the file
+
