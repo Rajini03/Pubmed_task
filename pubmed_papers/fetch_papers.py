@@ -19,7 +19,7 @@ def fetch_pubmed_papers(query, debug=False):
     if debug:
         print("DEBUG: Results fetched from PubMed:", results)
 
-    return results  # ✅ This function should return results ONLY
+    return results
 
 
 
