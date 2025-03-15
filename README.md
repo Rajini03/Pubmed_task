@@ -18,9 +18,7 @@ This project is a Python-based CLI tool that fetches research papers from **PubM
 
 ### Steps  
 1. **Clone the repository**  
-   ```sh
-   git clone https://github.com/your-username/pubmed_papers.git
-   cd pubmed_papers
+    
 2. **Install dependencies using Poetry**
    - poetry install
 - **Usage**
@@ -30,6 +28,7 @@ This project is a Python-based CLI tool that fetches research papers from **PubM
 **Enable Debug Mode**:
 poetry run python -m pubmed_papers.cli "cancer treatment" results.csv --debug
 
+**📂 Project Structure**
 
 pubmed_papers/
 
